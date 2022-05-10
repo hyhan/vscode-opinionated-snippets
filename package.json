@@ -1,7 +1,7 @@
 {
   "name": "vscode-opinionated-snippet",
   "displayName": "Opinionated Code Snippet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opinionated Code snippets for JavaScript",
   "categories": [
     "Snippets"
@@ -64,7 +64,7 @@
   "engines": {
     "vscode": "^0.12.x"
   },
-  "icon": "art/icon1.png",
+  "icon": "art/icon.png",
   "galleryBanner": {
     "color": "#ffffff",
     "theme": "dark"
