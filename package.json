@@ -1,7 +1,7 @@
 {
   "name": "vscode-opinionated-snippet",
   "displayName": "Opinionated Code Snippet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Opinionated Code snippets for JavaScript",
   "categories": [
     "Snippets"

@@ -6,4 +6,6 @@
   <h2 align="center">opinionated Code Snippets (Visual Studio Code)</h2>
 </p>
 
-<h3> ☀️ Opinionated Javascript Sippets for Visual Studio Code </h3>
+<p>
+  <h3> ☀️ Opinionated Javascript Sippets for Visual Studio Code </h3>
+</p>
