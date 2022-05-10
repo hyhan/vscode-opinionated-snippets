@@ -1,0 +1,22 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "vscode-javascript-snippet@0.1.4",
+    "stage": "build",
+    "script": "vsce package",
+    "pkgname": "vscode-javascript-snippet",
+    "err": {
+      "name": "pnpm",
+      "message": "vscode-javascript-snippet@0.1.4 build: `vsce package`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: vscode-javascript-snippet@0.1.4 build: `vsce package`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/Users/hi/.nvm/versions/node/v16.13.0/pnpm-global/5/node_modules/.pnpm/pnpm@7.0.1/node_modules/pnpm/dist/pnpm.cjs:93293:22)\n    at ChildProcess.emit (node:events:527:28)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)"
+    }
+  },
+  "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
+}

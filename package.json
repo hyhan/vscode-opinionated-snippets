@@ -1,0 +1,72 @@
+{
+  "name": "vscode-opinionated-snippet",
+  "displayName": "Opinionated Code Snippet",
+  "version": "0.0.1",
+  "description": "Opinionated Code snippets for JavaScript",
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "JavaScript",
+    "snippet",
+    "代码",
+    "代码片断",
+    "snippets",
+    "ES6 Snippets",
+    "ES6+ Snippets",
+    "Javascript Snippets",
+    "JS Snippets",
+    "ECMAScript Snippets"
+  ],
+  "homepage": "https://github.com/hyhan/vscode-opinionated-snippet/",
+  "bugs": {
+    "url": "https://github.com/hyhan/vscode-opinionated-snippet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyhan/vscode-opinionated-snippet/blob/master/README.md"
+  },
+  "license": "MIT",
+  "publisher": "hyhan",
+  "scripts": {
+    "prebuild": "node merge.js",
+    "build": "vsce package",
+    "prepublish": "npm run build",
+    "publish": "vsce publish"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/javascript.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "glob": "^7.1.4"
+  },
+  "engines": {
+    "vscode": "^0.12.x"
+  },
+  "icon": "art/icon1.png",
+  "galleryBanner": {
+    "color": "#ffffff",
+    "theme": "dark"
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"typeof": {
+		"prefix": "to",
+		"body": ["typeof ${1:operand} === '${2:undefined}'"],
+		"description": "typeof\n"
+	},
+	"try/catch/finally": {
+		"prefix": "tcf",
+		"body": ["try {\n\t${1}\n} catch (${2:err}) {\n\t\n} finally {\n\t\n}"],
+		"description": "try/catch/finally\n"
+	},
+	"try/finally": {
+		"prefix": "tf",
+		"body": ["try {\n\t${1}\n} finally {\n\t\n}"],
+		"description": "try/finally\n"
+	},
+  "console.log": {
+		"prefix": "clg",
+		"body": ["console.log($1);"],
+		"description": "console.log\n"
+	},
+  "throw new Error()": {
+		"prefix": ["tn", "throw.Error()"],
+		"body": ["throw new Error(${1:'Something bad happened.'});"],
+		"description": "throw new Error('message')\n"
+	},
+	"iife": {
+		"prefix": "iife",
+		"body": [";(function (${1:param}) {\n\t${3}\n})(${2})\n"],
+		"description": "immediately-invoked function expression (IIFE)\n"
+	},
+	"arrow function with destructuring": {
+		"prefix": "afd",
+		"body": ["({${1:param}}) => ${2:statement}\n"],
+		"description": "arrow function with destructuring\n"
+	}
+}

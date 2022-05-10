@@ -1,0 +1,14 @@
+{
+	"class": {
+		"prefix": "cl",
+		"body": [
+			"class ${1:name} {",
+			"\tconstructor(${2:params}) {",
+			"\t\t${3}",
+			"\t}",
+			"",
+			"}"
+		],
+		"description": "class\n"
+	}
+}
