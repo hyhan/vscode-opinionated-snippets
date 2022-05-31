@@ -1,7 +1,7 @@
 {
   "name": "vscode-opinionated-snippet",
   "displayName": "Opinionated Code Snippet",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Opinionated Code snippets for JavaScript",
   "categories": [
     "Snippets"
@@ -59,7 +59,8 @@
     ]
   },
   "devDependencies": {
-    "glob": "^7.1.4"
+    "glob": "^7.1.4",
+    "vsce": "^2.9.0"
   },
   "engines": {
     "vscode": "^0.12.x"

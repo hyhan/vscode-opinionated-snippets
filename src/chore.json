@@ -16,12 +16,12 @@
 	},
   "console.log": {
 		"prefix": "clg",
-		"body": ["console.log($1);"],
+		"body": ["console.log($1)"],
 		"description": "console.log\n"
 	},
   "throw new Error()": {
 		"prefix": ["tn", "throw.Error()"],
-		"body": ["throw new Error(${1:'Something bad happened.'});"],
+		"body": ["throw new Error(${1:'Something bad happened.'})"],
 		"description": "throw new Error('message')\n"
 	},
 	"iife": {
@@ -33,5 +33,10 @@
 		"prefix": "afd",
 		"body": ["({${1:param}}) => ${2:statement}\n"],
 		"description": "arrow function with destructuring\n"
+	},
+	"arrow function": {
+		"prefix": "af",
+		"body": ["(${1:param}) => ${2:statement}\n"],
+		"description": "arrow function\n"
 	}
 }

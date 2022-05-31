@@ -1,4 +1,4 @@
-# Fork form [JavaScript Snippets (Visual Studio Code)](https://github.com/hyhan/vscode-javascript-snippet)
+# Fork form [JavaScript Snippets (Visual Studio Code)](https://github.com/xianghongai/vscode-javascript-snippet)
 
 > A lot of cuts have been made from the original
 
