@@ -31,12 +31,12 @@
 	},
 	"arrow function with destructuring": {
 		"prefix": "afd",
-		"body": ["({${1:param}}) => ${2:statement}\n"],
-		"description": "arrow function with destructuring\n"
+		"body": ["({${1:param}}) => {${0:statement}}"],
+		"description": "arrow function with destructuring1\n"
 	},
 	"arrow function": {
 		"prefix": "af",
-		"body": ["(${1:param}) => ${2:statement}\n"],
+		"body": ["(${1:param}) => {${0:statement}}"],
 		"description": "arrow function\n"
 	}
 }

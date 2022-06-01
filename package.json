@@ -1,7 +1,7 @@
 {
   "name": "vscode-opinionated-snippet",
   "displayName": "Opinionated Code Snippet",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Opinionated Code snippets for JavaScript",
   "categories": [
     "Snippets"
@@ -55,6 +55,14 @@
       {
         "language": "vue",
         "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vueScript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vueScript.json"
       }
     ]
   },

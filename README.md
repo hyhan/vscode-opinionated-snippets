@@ -7,5 +7,5 @@
 </p>
 
 <p>
-  <h3> ☀️ Opinionated Javascript Sippets for Visual Studio Code </h3>
+  <h3> ☀️ Opinionated Javascript Sippets for Visual Studio Code, only the most commonly used </h3>
 </p>

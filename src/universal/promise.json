@@ -26,12 +26,12 @@
 	},
   "then": {
 		"prefix": ".then",
-		"body": [".then((res) => {", "\t${1}", "})", ""],
+		"body": [".then((${1:res}) => {", "\t${0}", "})", ""],
 		"description": "Then\n"
 	},
   "catch": {
 		"prefix": ".catch",
-		"body": [".catch((err) => {", "\t${1}", "})", ""],
+		"body": [".catch((${1:err}) => {", "\t${0}", "})", ""],
 		"description": "Catch\n"
 	}
 }

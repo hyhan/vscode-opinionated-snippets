@@ -1,0 +1,50 @@
+{
+  "Vue Data": {
+    "prefix": "vdata",
+    "body": ["data() {", "\treturn {", "\t\t${1:key}: ${2:value}", "\t}", "},"],
+    "description": "Vue Component Data\n"
+  },
+  "Vue Methods": {
+    "prefix": "vmethod",
+    "body": ["methods: {", "\t${1:name}() {", "\t\t${0}", "\t}", "},"],
+    "description": "vue method\n"
+  },
+  "Vue Computed": {
+    "prefix": "vcomputed",
+    "body": [
+      "computed: {",
+      "\t${1:name}() {",
+      "\t\treturn this.${2:data} ${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "computed value\n"
+  },
+  "Vue Lifecycle created": {
+    "prefix": "vcreated",
+    "body": ["created () {", "\t${0}", "},"],
+    "description": "created lifecycle method\n"
+  },
+  "Vue Lifecycle mounted": {
+    "prefix": "vmounted",
+    "body": ["mounted () {", "\t${0}", "},"],
+    "description": "mounted lifecycle method\n"
+  },
+  "Vue Props with Default": {
+    "prefix": "vprops",
+    "body": [
+      "props: {",
+      "\t${1:propName}: {",
+      "\t\ttype: ${2:Number},",
+      "\t\tdefault: ${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Props with Default\n"
+  },
+  "Vue Import into the Component": {
+    "prefix": "vcomponents",
+    "body": ["components: {", "\t${1:New},", "},"],
+    "description": "Import one component into another, within export statement\n"
+  }
+}
