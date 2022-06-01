@@ -1,7 +1,7 @@
 {
   "name": "vscode-opinionated-snippet",
   "displayName": "Opinionated Code Snippet",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Opinionated Code snippets for JavaScript",
   "categories": [
     "Snippets"
@@ -16,7 +16,8 @@
     "ES6+ Snippets",
     "Javascript Snippets",
     "JS Snippets",
-    "ECMAScript Snippets"
+    "ECMAScript Snippets",
+    "Vue Snippets"
   ],
   "homepage": "https://github.com/hyhan/vscode-opinionated-snippet/",
   "bugs": {
