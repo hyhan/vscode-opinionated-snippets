@@ -5,7 +5,7 @@
 		"description": "use strict mode\n"
 	},
 	"const": {
-		"prefix": "c",
+		"prefix": "co",
 		"body": ["const ${1:name} = ${2:value}"],
 		"description": "const assignment\n"
 	},
@@ -21,7 +21,7 @@
 		"description": "arrow function expression(const)\n"
 	},
 	"let": {
-		"prefix": "l",
+		"prefix": "le",
 		"body": ["let ${1:name} = ${2:value}"],
 		"description": "let assignment\n"
 	},

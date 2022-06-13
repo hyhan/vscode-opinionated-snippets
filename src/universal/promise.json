@@ -25,13 +25,18 @@
 		"description": "Return a new Promise\n"
 	},
   "then": {
-		"prefix": ".then",
-		"body": [".then((${1:res}) => {", "\t${0}", "})", ""],
+		"prefix": "then",
+		"body": ["then((${1:res}) => {", "\t${0}", "})", ""],
 		"description": "Then\n"
 	},
   "catch": {
-		"prefix": ".catch",
-		"body": [".catch((${1:err}) => {", "\t${0}", "})", ""],
+		"prefix": "catch",
+		"body": ["catch((${1:err}) => {", "\t${0}", "})", ""],
 		"description": "Catch\n"
+	},
+  "finally": {
+		"prefix": "finally",
+		"body": ["finally(() => {", "\t${0}", "})", ""],
+		"description": "Finally\n"
 	}
 }

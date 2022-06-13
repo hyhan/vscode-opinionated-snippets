@@ -1,0 +1,66 @@
+{
+  "<script setup lang=\"ts\">": {
+    "prefix": "sslt",
+    "body": ["<script setup lang=\"ts\">", "$0", "</script>"],
+    "description": "Script tag for setup & typescript\n"
+  },
+  "Vue2 Single File Component": {
+    "prefix": "tempv2",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "\tname: '${0}'",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"${1:scss}\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue File"
+  },
+  "Vue3 Single File Component": {
+    "prefix": "tempv3",
+    "body": [
+      "<script setup>",
+      "$0",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"${1:scss}\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue File Setup Composition API"
+  },
+  "Vue3 Single File Component For TS": {
+    "prefix": "tempv3ts",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"${1:scss}\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue File Setup Composition API"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "vscode-opinionated-snippet",
   "displayName": "Opinionated Code Snippet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Opinionated Code snippets for JavaScript",
   "categories": [
     "Snippets"
@@ -30,8 +30,7 @@
   "license": "MIT",
   "publisher": "hyhan",
   "scripts": {
-    "prebuild": "node merge.js",
-    "build": "vsce package",
+    "build": "node merge.js && vsce package",
     "prepublish": "npm run build",
     "publish": "vsce publish"
   },
@@ -64,6 +63,10 @@
       {
         "language": "typescript",
         "path": "./snippets/vueScript.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue.json"
       }
     ]
   },
