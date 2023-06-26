@@ -41,6 +41,40 @@
 		],
 		"description": "Vue2 Single File Component with SCSS.\n"
 	},
+	"Vue2 Single File Component With Less": {
+		"prefix": "vue2less",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script>",
+			"export default {",
+			"\tname: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"",
+			"\tdata() {",
+			"\t\treturn {",
+			"\t\t\t${6}",
+			"\t\t};",
+			"\t},$0",
+			"",
+			"\tcreate() {",
+			"\t\t${7}",
+			"\t},",
+			"",
+			"\tmethods: {",
+			"\t\t${8}",
+			"\t},",
+			"};",
+			"</script>",
+			"",
+			"<style scoped lang=\"less\">", 
+			"</style>"
+		],
+		"description": "Vue2 Single File Component with SCSS.\n"
+	},
   "Vue3 Single File Component": {
     "prefix": "vue3",
 		"body": [
