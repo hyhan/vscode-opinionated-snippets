@@ -39,7 +39,7 @@
 			"</script>",
 			""
 		],
-		"description": "Vue2 Single File Component with SCSS.\n"
+		"description": "Vue2 Single File Component.\n"
 	},
 	"Vue2 Single File Component With Less": {
 		"prefix": "vue2less",
@@ -70,7 +70,7 @@
 			"};",
 			"</script>",
 			"",
-			"<style scoped lang=\"less\">", 
+			"<style scoped lang=\"less\">",
 			"</style>"
 		],
 		"description": "Vue2 Single File Component with SCSS.\n"

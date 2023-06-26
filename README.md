@@ -69,6 +69,7 @@
 |          Trigger | Content                              |
 | ---------------: | ------------------------------------ |
 |          `vue2→` | `vue2 template`                      |
+|      `vue2less→` | `vue2 template with less`            |
 |          `vue3→` | `vue3 template`                      |
 |        `vue3ts→` | `vue3 template with ts`              |
 |          `sslt→` | `<script setup lang="ts"></script>`  |
