@@ -1,6 +1,6 @@
 {
 	"import individual features": {
-		"prefix": "im",
+		"prefix": "imi",
 		"body": ["import { ${2:moduleName} } from '${1:module}'"],
 		"description": "Import individual features\n"
 	},

@@ -33,30 +33,30 @@ glob('src/universal/*.json', (error, files) => {
 })
 
 const vueScriptOutput = {}
-glob('src/vue-script/*.json', (error, files) => {
-  try {
-    fs.existsSync(outputPath) || fs.mkdirSync(outputPath)
+// glob('src/vue-script/*.json', (error, files) => {
+//   try {
+//     fs.existsSync(outputPath) || fs.mkdirSync(outputPath)
 
-    fs.accessSync(outputPath, fs.constants.R_OK | fs.constants.W_OK)
+//     fs.accessSync(outputPath, fs.constants.R_OK | fs.constants.W_OK)
 
-    // console.log(`${outputPath} exists, and it is writable`);
+//     // console.log(`${outputPath} exists, and it is writable`);
 
-    files.forEach((filename) => {
-      const contents = JSON.parse(fs.readFileSync(filename, 'utf8'))
-      Object.assign(vueScriptOutput, contents)
-    })
-    fs.writeFileSync(`${outputPath}vueScript.json`, JSON.stringify(vueScriptOutput))
+//     files.forEach((filename) => {
+//       const contents = JSON.parse(fs.readFileSync(filename, 'utf8'))
+//       Object.assign(vueScriptOutput, contents)
+//     })
+//     fs.writeFileSync(`${outputPath}vueScript.json`, JSON.stringify(vueScriptOutput))
 
-    console.log(`Complete! :)`)
-  } catch (err) {
-    console.error(
-      `${outputPath} ${
-        err.code === 'ENOENT' ? 'does not exist' : 'is read-only'
-      }`
-    )
-    console.log('Failed! :(')
-  }
-})
+//     console.log(`Complete! :)`)
+//   } catch (err) {
+//     console.error(
+//       `${outputPath} ${
+//         err.code === 'ENOENT' ? 'does not exist' : 'is read-only'
+//       }`
+//     )
+//     console.log('Failed! :(')
+//   }
+// })
 const vueOutput = {}
 glob('src/vue/*.json', (error, files) => {
   try {

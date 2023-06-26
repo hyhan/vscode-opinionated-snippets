@@ -1,0 +1,71 @@
+{
+  "vdata": {
+    "prefix": "vdata",
+    "body": ["data() {", "\treturn {", "\t\t${1:key}: ${2:value}", "\t}", "},"],
+    "description": "Vue Data\n"
+  },
+  "vmethod": {
+    "prefix": "vmethod",
+    "body": ["methods: {", "\t${1:name}() {", "\t\t${0}", "\t}", "},"],
+    "description": "Vue Method\n"
+  },
+  "vcomputed": {
+    "prefix": "vcomputed",
+    "body": [
+      "computed: {",
+      "\t${1:name}() {",
+      "\t\treturn this.${2:data} ${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "Vue Computed\n"
+  },
+  "vwatch": {
+    "prefix": "vwatch",
+    "body": [
+      "watch: {",
+      "\t${1:name}(${2:newValue}, ${3:oldValue}) {",
+      "\t\t${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Watch\n"
+  },
+  "vprops": {
+    "prefix": "vprops",
+    "body": [
+      "props: {",
+      "\t${1:propName}: {",
+      "\t\ttype: ${2:Number},",
+      "\t\tdefault: ${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Props\n"
+  },
+  "vcomponents": {
+    "prefix": "vcomponents",
+    "body": ["components: {", "\t${1:New},", "},"],
+    "description": "Vue Components\n"
+  },
+  "vcreated": {
+    "prefix": "vcreated",
+    "body": ["created () {", "\t${0}", "},"],
+    "description": "Vue Created\n"
+  },
+  "vmounted": {
+    "prefix": "vmounted",
+    "body": ["mounted () {", "\t${0}", "},"],
+    "description": "Vue Mounted\n"
+  },
+  "vbeforecreate": {
+    "prefix": "vbeforecreate",
+    "body": ["beforeCreate () {", "\t${0}", "},"],
+    "description": "Vue BeforeCreate\n"
+  },
+  "vbeforemount": {
+    "prefix": "vbeforemount",
+    "body": ["beforeMount () {", "\t${0}", "},"],
+    "description": "Vue BeforeMount\n"
+  }
+}
