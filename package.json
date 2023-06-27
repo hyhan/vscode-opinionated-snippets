@@ -1,7 +1,7 @@
 {
   "name": "vscode-opinionated-snippet",
   "displayName": "Opinionated Code Snippet",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Opinionated Code snippets for JavaScript",
   "categories": [
     "Snippets"
@@ -32,7 +32,8 @@
   "scripts": {
     "build": "node merge.js && vsce package",
     "prepublish": "npm run build",
-    "publish": "vsce publish"
+    "publish": "bumpp && vsce publish",
+    "bummp": "bumpp"
   },
   "contributes": {
     "snippets": [
@@ -71,6 +72,7 @@
     ]
   },
   "devDependencies": {
+    "bumpp": "^9.1.1",
     "glob": "^7.1.4",
     "vsce": "^2.9.0"
   },
