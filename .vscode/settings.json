@@ -1,5 +1,34 @@
 {
   "search.exclude": {
     "**/snippets": true
-  }
+  },
+  "cSpell.words": [
+    "exafn",
+    "exallo",
+    "exas",
+    "exdaf",
+    "exdas",
+    "exdc",
+    "exdce",
+    "exfn",
+    "exfr",
+    "imall",
+    "imas",
+    "ssls",
+    "sslt",
+    "tsless",
+    "tssass",
+    "tsscss",
+    "tsstylus",
+    "vbeforecreate",
+    "vbeforemount",
+    "vcomponents",
+    "vcomputed",
+    "vcreated",
+    "vdata",
+    "vmethod",
+    "vmounted",
+    "vprops",
+    "vwatch"
+  ]
 }

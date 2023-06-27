@@ -70,8 +70,16 @@
 | ---------------: | ------------------------------------ |
 |          `vue2→` | `vue2 template`                      |
 |      `vue2less→` | `vue2 template with less`            |
+|      `vue2scss→` | `vue2 template with scss`            |
+|    `vue2stylus→` | `vue2 template with stylus`          |
 |          `vue3→` | `vue3 template`                      |
+|      `vue3less→` | `vue3 template with less`            |
+|      `vue3scss→` | `vue3 template with scss`            |
+|    `vue3stylus→` | `vue3 template with stylus`          |
 |        `vue3ts→` | `vue3 template with ts`              |
+|    `vue3tsless→` | `vue3 template with ts and less`     |
+|    `vue3tsscss→` | `vue3 template with ts and scss`     |
+|  `vue3tsstylus→` | `vue3 template with ts and stylus`   |
 |          `sslt→` | `<script setup lang="ts"></script>`  |
 |          `ssls→` | `<style scoped lang="scss"></style>` |
 |         `vdata→` | `data() { return {}}`                |
