@@ -73,7 +73,75 @@
 			"<style scoped lang=\"less\">", 
 			"</style>"
 		],
-		"description": "Vue2 Single File Component with SCSS.\n"
+		"description": "Vue2 Single File Component With Less.\n"
+	},
+	"Vue2 Single File Component With Scss": {
+		"prefix": "vue2scss",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script>",
+			"export default {",
+			"\tname: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"",
+			"\tdata() {",
+			"\t\treturn {",
+			"\t\t\t${6}",
+			"\t\t};",
+			"\t},$0",
+			"",
+			"\tcreate() {",
+			"\t\t${7}",
+			"\t},",
+			"",
+			"\tmethods: {",
+			"\t\t${8}",
+			"\t},",
+			"};",
+			"</script>",
+			"",
+			"<style scoped lang=\"scss\">", 
+			"</style>"
+		],
+		"description": "Vue2 Single File Component With Scss.\n"
+	},
+	"Vue2 Single File Component With Stylus": {
+		"prefix": "vue2stylus",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script>",
+			"export default {",
+			"\tname: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"",
+			"\tdata() {",
+			"\t\treturn {",
+			"\t\t\t${6}",
+			"\t\t};",
+			"\t},$0",
+			"",
+			"\tcreate() {",
+			"\t\t${7}",
+			"\t},",
+			"",
+			"\tmethods: {",
+			"\t\t${8}",
+			"\t},",
+			"};",
+			"</script>",
+			"",
+			"<style scoped lang=\"stylus\">", 
+			"</style>"
+		],
+		"description": "Vue2 Single File Component With Stylus.\n"
 	},
   "Vue3 Single File Component": {
     "prefix": "vue3",
@@ -91,6 +159,60 @@
 		],
     "description": "Base for Vue File Setup Composition API"
   },
+  "Vue3 Single File Component With Less": {
+    "prefix": "vue3less",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script setup>",
+      "$2",
+			"</script>",
+			"",
+			"<style scoped lang=\"less\">", 
+			"</style>"
+		],
+    "description": "Base for Vue File Setup Composition API With Less"
+  },
+  "Vue3 Single File Component With Scss": {
+    "prefix": "vue3scss",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script setup>",
+      "$2",
+			"</script>",
+			"",
+			"<style scoped lang=\"scss\">", 
+			"</style>"
+		],
+    "description": "Base for Vue File Setup Composition API With Scss"
+  },
+  "Vue3 Single File Component With Stylus": {
+    "prefix": "vue3stylus",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script setup>",
+      "$2",
+			"</script>",
+			"",
+			"<style scoped lang=\"stylus\">", 
+			"</style>"
+		],
+    "description": "Base for Vue File Setup Composition API With Stylus"
+  },
   "Vue3 Single File Component For TS": {
     "prefix": "vue3ts",
     "body": [
@@ -106,5 +228,59 @@
 			""
     ],
     "description": "Base for Vue File Setup Composition API"
+  },
+  "Vue3 Single File Component For TS With Less": {
+    "prefix": "vue3tsless",
+    "body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script setup lang=\"ts\">",
+      "$2",
+			"</script>",
+			"",
+			"<style scoped lang=\"less\">", 
+			"</style>"
+    ],
+    "description": "Base for Vue File Setup Composition API With Less"
+  },
+  "Vue3 Single File Component For TS With Scss": {
+    "prefix": "vue3tsscss",
+    "body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script setup lang=\"ts\">",
+      "$2",
+			"</script>",
+			"",
+			"<style scoped lang=\"scss\">", 
+			"</style>"
+    ],
+    "description": "Base for Vue File Setup Composition API With Scss"
+  },
+  "Vue3 Single File Component For TS With Stylus": {
+    "prefix": "vue3tsstylus",
+    "body": [
+			"<template>",
+			"\t<div>",
+			"\t\t$1",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script setup lang=\"ts\">",
+      "$2",
+			"</script>",
+			"",
+			"<style scoped lang=\"stylus\">", 
+			"</style>"
+    ],
+    "description": "Base for Vue File Setup Composition API With Stylus"
   }
 }

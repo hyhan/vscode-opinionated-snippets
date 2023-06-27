@@ -1,5 +1,11 @@
 {
   "search.exclude": {
     "**/snippets": true
-  }
+  },
+  "cSpell.words": [
+    "tsless",
+    "tssass",
+    "tsscss",
+    "tsstylus"
+  ]
 }
