@@ -1,7 +1,7 @@
 {
   "name": "vscode-opinionated-snippet",
   "displayName": "Opinionated Code Snippet",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Opinionated Code snippets for JavaScript",
   "categories": [
     "Snippets"
@@ -30,13 +30,25 @@
   "license": "MIT",
   "publisher": "hyhan",
   "scripts": {
-    "build": "node merge.js && vsce package",
+    "build": "vsce package",
     "prepublish": "npm run build",
     "publish": "bumpp && vsce publish",
     "bummp": "bumpp"
   },
   "contributes": {
     "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script.json"
+      },
       {
         "language": "javascript",
         "path": "./snippets/javascript.json"
@@ -52,22 +64,6 @@
       {
         "language": "typescriptreact",
         "path": "./snippets/javascript.json"
-      },
-      {
-        "language": "vue",
-        "path": "./snippets/javascript.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vueScript.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/vueScript.json"
-      },
-      {
-        "language": "vue",
-        "path": "./snippets/vue.json"
       }
     ]
   },
