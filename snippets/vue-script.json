@@ -1,0 +1,117 @@
+{
+  "Vue Data": {
+    "prefix": "vdata",
+    "body": ["data() {", "\treturn {", "\t\t${1:key}: ${2:value}", "\t}", "},"],
+    "description": "Vue Component Data"
+  },
+  "Vue Methods": {
+    "prefix": "vmethod",
+    "body": ["methods: {", "\t${1:name}() {", "\t\t${0}", "\t}", "},"],
+    "description": "vue method"
+  },
+  "Vue Computed": {
+    "prefix": "vcomputed",
+    "body": [
+      "computed: {",
+      "\t${1:name}() {",
+      "\t\treturn this.${2:data} ${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "computed value"
+  },
+  "Vue Lifecycle beforeCreate": {
+    "prefix": "vbeforecreate",
+    "body": ["beforeCreate () {", "\t${0};", "},"],
+    "description": "beforeCreate lifecycle method"
+  },
+  "Vue Lifecycle created": {
+    "prefix": "vcreated",
+    "body": ["created () {", "\t${0};", "},"],
+    "description": "created lifecycle method"
+  },
+  "Vue Lifecycle beforeMount": {
+    "prefix": "vbeforemount",
+    "body": ["beforeMount () {", "\t${0};", "},"],
+    "description": "beforeMount lifecycle method"
+  },
+  "Vue Lifecycle mounted": {
+    "prefix": "vmounted",
+    "body": ["mounted () {", "\t${0};", "},"],
+    "description": "mounted lifecycle method"
+  },
+  "Vue Lifecycle beforeUpdate": {
+    "prefix": "vbeforeupdate",
+    "body": ["beforeUpdate () {", "\t${0};", "},"],
+    "description": "beforeUpdate lifecycle method"
+  },
+  "Vue Lifecycle updated": {
+    "prefix": "vupdated",
+    "body": ["updated () {", "\t${0};", "},"],
+    "description": "updated lifecycle method"
+  },
+  "Vue Lifecycle beforeDestroy": {
+    "prefix": "vbeforedestroy",
+    "body": ["beforeDestroy () {", "\t${0};", "},"],
+    "description": "beforeDestroy lifecycle method"
+  },
+  "Vue Lifecycle destroyed": {
+    "prefix": "vdestroyed",
+    "body": ["destroyed () {", "\t${0};", "},"],
+    "description": "destroyed lifecycle method"
+  },
+  "Vue Watchers": {
+    "prefix": "vwatcher",
+    "body": [
+      "watch: {",
+      "\t${1:data}(${2:newValue}, ${3:oldValue}) {",
+      "\t\t${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "vue watcher"
+  },
+  "Vue Watchers with Options": {
+    "prefix": "vwatcher-options",
+    "body": [
+      "watch: {",
+      "\t${1:data}: {",
+      "\t\timmediate: ${2:true},",
+      "\t\tdeep: ${3:true},",
+      "\t\thandler(${4:newValue}, ${5:oldValue}) {",
+      "\t\t\t${0}",
+      "\t\t}",
+      "\t}",
+      "},"
+    ],
+    "description": "vue watcher with options"
+  },
+  "Vue Props with Default": {
+    "prefix": "vprops",
+    "body": [
+      "props: {",
+      "\t${1:propName}: {",
+      "\t\ttype: ${2:Number},",
+      "\t\tdefault: ${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Props with Default"
+  },
+  "Vue Import into the Component": {
+    "prefix": "vcomponents",
+    "body": ["components: {", "\t${1:New},", "},"],
+    "description": "Import one component into another, within export statement"
+  },
+  "Vue Filter": {
+    "prefix": "vfilter",
+    "body": [
+      "filters: {",
+      "\t${1:fnName}: function(${2:value}) {",
+      "\t\treturn ${2:value}${0};",
+      "\t}",
+      "}"
+    ],
+    "description": "vue filter"
+  }
+}

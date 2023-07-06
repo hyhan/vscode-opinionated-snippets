@@ -1,0 +1,268 @@
+{
+  "typeof": {
+    "prefix": "to",
+    "body": ["typeof ${1:operand} === '${2:undefined}'"],
+    "description": "typeof\n"
+  },
+  "try/catch/finally": {
+    "prefix": "tcf",
+    "body": ["try {\n\t${1}\n} catch (${2:err}) {\n\t\n} finally {\n\t\n}"],
+    "description": "try/catch/finally\n"
+  },
+  "try/finally": {
+    "prefix": "tf",
+    "body": ["try {\n\t${1}\n} finally {\n\t\n}"],
+    "description": "try/finally\n"
+  },
+  "console.log": {
+    "prefix": "clg",
+    "body": ["console.log($1)"],
+    "description": "console.log\n"
+  },
+  "throw new Error()": {
+    "prefix": ["tn", "throw.Error()"],
+    "body": ["throw new Error(${1:'Something bad happened.'})"],
+    "description": "throw new Error('message')\n"
+  },
+  "iife": {
+    "prefix": "iife",
+    "body": [";(function (${1:param}) {\n\t${3}\n})(${2})\n"],
+    "description": "immediately-invoked function expression (IIFE)\n"
+  },
+  "arrow function with destructuring": {
+    "prefix": "afd",
+    "body": ["({${1:param}}) => {${0:statement}}"],
+    "description": "arrow function with destructuring1\n"
+  },
+  "arrow function": {
+    "prefix": "af",
+    "body": ["(${1:param}) => ${0:statement}"],
+    "description": "arrow function\n"
+  },
+  "class": {
+    "prefix": "cl",
+    "body": [
+      "class ${1:name} {",
+      "\tconstructor(${2:params}) {",
+      "\t\t${3}",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "class\n"
+  },
+  "exports.member (CommonJS)": {
+    "prefix": "em",
+    "body": ["exports.${1:member} = ${2:value}"],
+    "description": "exports.member (CommonJS)\n"
+  },
+  "module.exports (CommonJS)": {
+    "prefix": "me",
+    "body": ["module.exports = ${1:name}"],
+    "description": "module.exports (CommonJS)\n"
+  },
+  "require (CommonJS)": {
+    "prefix": "rq",
+    "body": ["require('${1:module}')"],
+    "description": "require (CommonJS)\n"
+  },
+  "require assignment (CommonJS)": {
+    "prefix": "crq",
+    "body": ["const ${1:module} = require('${1:module}');"],
+    "description": "require assignment (CommonJS)\n"
+  },
+  "require diverse assignment (CommonJS)": {
+    "prefix": "req",
+    "body": ["const ${2:name} = require('${1:module}');"],
+    "description": "require diverse assignment (CommonJS)\n"
+  },
+  "use strict": {
+    "prefix": "usm",
+    "body": ["'use strict'"],
+    "description": "use strict mode\n"
+  },
+  "const": {
+    "prefix": "co",
+    "body": ["const ${1:name} = ${2:value}"],
+    "description": "const assignment\n"
+  },
+  "const destructing object": {
+    "prefix": "cdo",
+    "body": ["const {${2}} = ${1}"],
+    "description": "const assignment destructuring\n"
+  },
+  "arrow function expression(const)": {
+    "prefix": "caf",
+    "body": ["const ${1:name} = (${2:param}) => {\n\t${3}\n}\n"],
+    "description": "arrow function expression(const)\n"
+  },
+  "let": {
+    "prefix": "le",
+    "body": ["let ${1:name} = ${2:value}"],
+    "description": "let assignment\n"
+  },
+  "let destructing object": {
+    "prefix": "ldo",
+    "body": ["let {${2}} = ${1}"],
+    "description": "let assignment destructuring\n"
+  },
+  "arrow function expression(let)": {
+    "prefix": "laf",
+    "body": ["let ${1:name} = (${2:param}) => {\n\t${3}\n}\n"],
+    "description": "arrow function expression(let)\n"
+  },
+  "import individual features": {
+    "prefix": "imi",
+    "body": ["import { ${2:moduleName} } from '${1:module}'"],
+    "description": "Import individual features\n"
+  },
+  "import default export": {
+    "prefix": "imd",
+    "body": ["import ${2:moduleName} from '${1:module}'"],
+    "description": "Import default export\n"
+  },
+  "import renamed exports": {
+    "prefix": "imas",
+    "body": ["import { ${2:originalName} as ${3:alias} } from '${1:module}'"],
+    "description": "Import renamed exports\n"
+  },
+  "import all module as alias": {
+    "prefix": "imall",
+    "body": ["import * as ${2:alias} from '${1:module}'"],
+    "description": "Import all of a module's exports as a module object\n"
+  },
+  "import without module name": {
+    "prefix": "imn",
+    "body": ["import '${1:module}'"],
+    "description": "Import a module for side effects only\n"
+  },
+  "export": {
+    "prefix": "ex",
+    "body": ["export {${1:nameN}}"],
+    "description": "*export list\n"
+  },
+  "export renaming": {
+    "prefix": "exas",
+    "body": ["export {${1:variable} as ${2:name}}"],
+    "description": "*renaming exports as\n"
+  },
+  "export const": {
+    "prefix": "exc",
+    "body": ["export const ${1:name} = ${2:value}"],
+    "description": "exporting individual features(const)\n"
+  },
+  "export function": {
+    "prefix": "exfn",
+    "body": ["export function ${1:name}() {", "\t${2}", "}"],
+    "description": "exporting individual features(function)\n"
+  },
+  "export named arrow function": {
+    "prefix": "exafn",
+    "body": ["export const ${1:name} = (${2:params}) => {", "\t$3", "}"],
+    "description": "export named arrow function\n"
+  },
+  "export default": {
+    "prefix": "exd",
+    "body": ["export default ${1:expression}"],
+    "description": "*export default\n"
+  },
+  "export as default": {
+    "prefix": "exdas",
+    "body": ["export {${1:name} as default}"],
+    "description": "export as default\n"
+  },
+  "export class": {
+    "prefix": "exdc",
+    "body": [
+      "export default class ${1:className} {",
+      "\tconstructor (${2:params}) {",
+      "\t\t${3}",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "export class\n"
+  },
+  "export class extends": {
+    "prefix": "exdce",
+    "body": [
+      "export default class ${1:className} extends ${2:baseClassName} {",
+      "\tconstructor (${3:params}) {",
+      "\t\tsuper()",
+      "\t\t${4}",
+      "\t}",
+      "}"
+    ],
+    "description": "export class extends\n"
+  },
+  "export default arrow function": {
+    "prefix": "exdaf",
+    "body": ["export default (${1:params}) => {", "\t${2}", "}", ""],
+    "description": "export default arrow function\n"
+  },
+  "export default function": {
+    "prefix": "exdfn",
+    "body": [
+      "export default function ${1:name} (${2:params}) {",
+      "\t${3}",
+      "}",
+      ""
+    ],
+    "description": "export default function\n"
+  },
+  "export from": {
+    "prefix": "exfr",
+    "body": ["export {${1:default}} from ${2:otherModule}"],
+    "description": "*aggregating modules, export from\n"
+  },
+  "export all from other module": {
+    "prefix": "exallo",
+    "body": ["export * from ${1:otherModule}"],
+    "description": "export all from other module\n"
+  },
+  "new Promise": {
+    "prefix": "pr",
+    "body": [
+      "const ${1:promise} = new Promise((resolve, reject) => {",
+      "\t${2}",
+      "});",
+      ""
+    ],
+    "description": "Promise\n"
+  },
+  "Promise.all()": {
+    "prefix": "pra",
+    "body": ["const results = await Promise.all([${1:promises}]);"],
+    "description": "The `Promise.all()` method takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises.\n"
+  },
+  "Promise.reject()": {
+    "prefix": "prj",
+    "body": ["Promise.reject(${1:reason});", ""],
+    "description": "Promise.reject\n"
+  },
+  "Promise.resolve()": {
+    "prefix": "prs",
+    "body": ["Promise.resolve(${1:value});", ""],
+    "description": "Promise.resolve\n"
+  },
+  "return promise": {
+    "prefix": "rpr",
+    "body": ["return new Promise((resolve, reject) => {\n\t${1}\n})"],
+    "description": "Return a new Promise\n"
+  },
+  "then": {
+    "prefix": "then",
+    "body": ["then((${1:res}) => {", "\t${0}", "})", ""],
+    "description": "Then\n"
+  },
+  "catch": {
+    "prefix": "catch",
+    "body": ["catch((${1:err}) => {", "\t${0}", "})", ""],
+    "description": "Catch\n"
+  },
+  "finally": {
+    "prefix": "finally",
+    "body": ["finally(() => {", "\t${0}", "})", ""],
+    "description": "Finally\n"
+  }
+}

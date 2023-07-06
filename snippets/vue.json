@@ -21,28 +21,25 @@
 			"<script>",
 			"export default {",
 			"\tname: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
 			"\tdata() {",
 			"\t\treturn {",
 			"\t\t\t${6}",
-			"\t\t};",
+			"\t\t}",
 			"\t},$0",
-			"",
 			"\tcreate() {",
 			"\t\t${7}",
 			"\t},",
-			"",
 			"\tmethods: {",
 			"\t\t${8}",
 			"\t},",
-			"};",
+			"}",
 			"</script>",
 			""
 		],
 		"description": "Vue2 Single File Component.\n"
 	},
 	"Vue2 Single File Component With Less": {
-		"prefix": "vue2less",
+		"prefix": "vue2-less",
 		"body": [
 			"<template>",
 			"\t<div>",
@@ -53,21 +50,18 @@
 			"<script>",
 			"export default {",
 			"\tname: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
 			"\tdata() {",
 			"\t\treturn {",
 			"\t\t\t${6}",
-			"\t\t};",
+			"\t\t}",
 			"\t},$0",
-			"",
 			"\tcreate() {",
 			"\t\t${7}",
 			"\t},",
-			"",
 			"\tmethods: {",
 			"\t\t${8}",
 			"\t},",
-			"};",
+			"}",
 			"</script>",
 			"",
 			"<style scoped lang=\"less\">",
@@ -76,7 +70,7 @@
 		"description": "Vue2 Single File Component With Less.\n"
 	},
 	"Vue2 Single File Component With Scss": {
-		"prefix": "vue2scss",
+		"prefix": "vue2-scss",
 		"body": [
 			"<template>",
 			"\t<div>",
@@ -87,30 +81,26 @@
 			"<script>",
 			"export default {",
 			"\tname: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
 			"\tdata() {",
 			"\t\treturn {",
 			"\t\t\t${6}",
-			"\t\t};",
+			"\t\t}",
 			"\t},$0",
-			"",
 			"\tcreate() {",
 			"\t\t${7}",
 			"\t},",
-			"",
 			"\tmethods: {",
 			"\t\t${8}",
 			"\t},",
-			"};",
+			"}",
 			"</script>",
-			"",
-			"<style scoped lang=\"scss\">", 
+			"<style scoped lang=\"scss\">",
 			"</style>"
 		],
 		"description": "Vue2 Single File Component With Scss.\n"
 	},
 	"Vue2 Single File Component With Stylus": {
-		"prefix": "vue2stylus",
+		"prefix": "vue2-stylus",
 		"body": [
 			"<template>",
 			"\t<div>",
@@ -121,24 +111,20 @@
 			"<script>",
 			"export default {",
 			"\tname: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
-			"",
 			"\tdata() {",
 			"\t\treturn {",
 			"\t\t\t${6}",
-			"\t\t};",
+			"\t\t}",
 			"\t},$0",
-			"",
 			"\tcreate() {",
 			"\t\t${7}",
 			"\t},",
-			"",
 			"\tmethods: {",
 			"\t\t${8}",
 			"\t},",
-			"};",
+			"}",
 			"</script>",
-			"",
-			"<style scoped lang=\"stylus\">", 
+			"<style scoped lang=\"stylus\">",
 			"</style>"
 		],
 		"description": "Vue2 Single File Component With Stylus.\n"
@@ -160,7 +146,7 @@
     "description": "Base for Vue File Setup Composition API"
   },
   "Vue3 Single File Component With Less": {
-    "prefix": "vue3less",
+    "prefix": "vue3-less",
 		"body": [
 			"<template>",
 			"\t<div>",
@@ -172,13 +158,13 @@
       "$2",
 			"</script>",
 			"",
-			"<style scoped lang=\"less\">", 
+			"<style scoped lang=\"less\">",
 			"</style>"
 		],
     "description": "Base for Vue File Setup Composition API With Less"
   },
   "Vue3 Single File Component With Scss": {
-    "prefix": "vue3scss",
+    "prefix": "vue3-scss",
 		"body": [
 			"<template>",
 			"\t<div>",
@@ -190,13 +176,13 @@
       "$2",
 			"</script>",
 			"",
-			"<style scoped lang=\"scss\">", 
+			"<style scoped lang=\"scss\">",
 			"</style>"
 		],
     "description": "Base for Vue File Setup Composition API With Scss"
   },
   "Vue3 Single File Component With Stylus": {
-    "prefix": "vue3stylus",
+    "prefix": "vue3-stylus",
 		"body": [
 			"<template>",
 			"\t<div>",
@@ -208,13 +194,13 @@
       "$2",
 			"</script>",
 			"",
-			"<style scoped lang=\"stylus\">", 
+			"<style scoped lang=\"stylus\">",
 			"</style>"
 		],
     "description": "Base for Vue File Setup Composition API With Stylus"
   },
   "Vue3 Single File Component For TS": {
-    "prefix": "vue3ts",
+    "prefix": "vue3-ts",
     "body": [
 			"<template>",
 			"\t<div>",
@@ -230,7 +216,7 @@
     "description": "Base for Vue File Setup Composition API"
   },
   "Vue3 Single File Component For TS With Less": {
-    "prefix": "vue3tsless",
+    "prefix": "vue3-ts-less",
     "body": [
 			"<template>",
 			"\t<div>",
@@ -242,13 +228,13 @@
       "$2",
 			"</script>",
 			"",
-			"<style scoped lang=\"less\">", 
+			"<style scoped lang=\"less\">",
 			"</style>"
     ],
     "description": "Base for Vue File Setup Composition API With Less"
   },
   "Vue3 Single File Component For TS With Scss": {
-    "prefix": "vue3tsscss",
+    "prefix": "vue3-ts-scss",
     "body": [
 			"<template>",
 			"\t<div>",
@@ -260,13 +246,13 @@
       "$2",
 			"</script>",
 			"",
-			"<style scoped lang=\"scss\">", 
+			"<style scoped lang=\"scss\">",
 			"</style>"
     ],
     "description": "Base for Vue File Setup Composition API With Scss"
   },
   "Vue3 Single File Component For TS With Stylus": {
-    "prefix": "vue3tsstylus",
+    "prefix": "vue3-ts-stylus",
     "body": [
 			"<template>",
 			"\t<div>",
@@ -278,7 +264,7 @@
       "$2",
 			"</script>",
 			"",
-			"<style scoped lang=\"stylus\">", 
+			"<style scoped lang=\"stylus\">",
 			"</style>"
     ],
     "description": "Base for Vue File Setup Composition API With Stylus"
