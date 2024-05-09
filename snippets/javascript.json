@@ -29,6 +29,7 @@
     "body": [";(function (${1:param}) {\n\t${3}\n})(${2})\n"],
     "description": "immediately-invoked function expression (IIFE)\n"
   },
+	"else": { "prefix": "el", "body": ["else {\n\t${1}\n}"], "description": "else statement \n" },
   "arrow function with destructuring": {
     "prefix": "afd",
     "body": ["({${1:param}}) => {${0:statement}}"],
